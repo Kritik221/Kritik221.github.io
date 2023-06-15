@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+ 
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+html {
+
+}
+
+img {
+    transition: 0.5s;
+    z-index: 1;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    z-index: 125;
+}
+
+
+body {
+    background:url(img/background.gif) no-repeat center center fixed;
+    background-size: cover;
+    font-size: 18px;
+    font-family: 'Pangolin', cursive;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list>img{
+    height: 100px;
+    border-radius: 30px;
+}
+
+.menu-list>span{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 15.5px 5px;
+    border-radius: 30px;
+}
+
+.title {
+    text-align: center;
+    color: rgb(36, 170, 232);
+}
+
+.link:hover {
+    color: #000;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+#links {
+    color: #000;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    border-bottom: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text>span {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    background-color: #000000da;
+    padding: 55px 0;
+    border-radius: 30px;
+}
+
+.video {
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.information {
+    padding-top:50px;
+    text-align: center;
+}
+
+.pictures-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.pictures {
+    background-color: #000000d3;
+    border-radius: 30px;
+    max-width: 400px;
+}
+.pictures>p{
+    line-height: 45px;
+}
+
+.pictures>img{
+    height: 150px;
+    border-radius: 30px;
+}
+
+.history {
+    overflow-y:scroll;
+    height: 500px;
+    background-color: #575757af;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.history-text {
+    text-align: center;
+}
+
+.history-text>p{
+    width: 500px;
+}
+.history-text>img{
+    height: 150px;
+    border-radius: 50%;
+}
+
+.history-video {
+    display: flex;
+    align-items: center;
+}
+
+.problems-text {
+    max-width: 400px;
+    text-align: center;
+    background-color: #000000b3;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+
+.problems {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.problems-text:hover{
+    transform: scale(1.2);
+}
+
+.videovoice {
+    text-align: center;
+}
+
+.voicevideo {
+    height: 285px;
+    border-radius: 30px;
+}
+
+.solving {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.solving-text {
+    width: 400px;
+    text-align: center;
+    background-color: #000000b3;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.authors {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.authors>p{
+    font-weight: bold;
+    font-size: 27px;
+    color: rgb(36, 170, 232);;
+}
+
+.authors>img {
+    height: 300px;
+    border-radius: 50px;
+}
+
+
+@media (max-width:1440px){
+
+
+    .history-video {
+        display: block;
+    }
+    .menu-list{
+        display: block;
+        text-align: center;
+    }
+    .menu-list>span {
+        display: flex;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .video {
+        text-align: center;
+    }
+}
+
+
+@media (max-width:1024px){
+    .pictures>img{
+        height: 134px;
+    }
+}
+
+@media (max-width:768px){
+    .pictures-list{
+        display: block;
+    }
+
+    .pictures {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .authors>img{
+        height: 240px;
+    }
+    .video {
+        height: 250px;
+    }
+    .voicevideo {
+        height: 250px;
+    }
+    .problems{
+        display: block;
+    }
+
+    .problems-text{
+        margin: 10px auto;
+    }
+}
+
+@media (max-width:425px){
+    .authors>img{
+        height: 160px;
+    }
+    .voicevideo {
+        height: 170px;
+    }
+}
+
+@media (max-width:375px) {
+    .menu-list>img{
+        height: 80px;
+    }
+
+    .text>span {
+        display: block;
+    }
+}
